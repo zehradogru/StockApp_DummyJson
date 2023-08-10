@@ -124,7 +124,6 @@ class _LoginPageState extends State<LoginPage> {
                   });
                 },
                 decoration: InputDecoration(
-
                     suffixIcon: IconButton(
                       icon: Icon(
                         isPasswordHidden
@@ -137,20 +136,10 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     hintText: 'Password',
                     enabledBorder: const OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.black)
-
-                    )
-
-                ),
-
-
-
+                        borderSide: BorderSide(color: Colors.black))),
                 obscureText: isPasswordHidden,
-
               ),
-
             ),
-
             const SizedBox(height: 20),
             SizedBox(
               height: 59,
@@ -206,7 +195,15 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 SizedBox(width: 90),
               ],
-            )
+            ),
+            const SizedBox(height: 70),
+            const Text(
+              'username: atuny0\npassword: 9uQFF1Lh',
+              style: TextStyle(
+                fontSize: 13,
+                color: Colors.black45,
+              ),
+            ),
           ]))),
     );
   }
